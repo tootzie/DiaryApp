@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menunav_Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"></item>
+
+    <item
+        android:title="Diary Menu">
+        <menu>
+            <item
+                android:id="@+id/menunav_newDiary"
+                android:icon="@drawable/ic_baseline_add_circle_24"
+                android:title="Add New Story" />
+            <item
+                android:id="@+id/menunav_List"
+                android:icon="@drawable/ic_baseline_list_24"
+                android:title="My Diaries" />
+
+        </menu>
+    </item>
+
+</menu>

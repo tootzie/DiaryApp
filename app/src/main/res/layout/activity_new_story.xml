@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".newStory">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_close_24"
+            android:layout_gravity="center"
+            android:id="@+id/btnCancel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/tvDate"
+            android:gravity="center"
+            android:text="28-09-20"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_baseline_arrow_drop_down_24"
+            android:id="@+id/btnDate"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/photo_icon"
+            android:id="@+id/btnOpenGallery"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/ic_baseline_check_24"
+            android:id="@+id/btnSave"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/diarypic"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/imgViewDiary"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sademo"
+            android:id="@+id/btnsad"
+            android:layout_marginLeft="98dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_sentiment_satisfied_24"
+            android:id="@+id/btnnetral"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/happyemo"
+            android:id="@+id/btnhappy"
+            android:layout_marginLeft="20dp"/>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTitle"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#93A6E4"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Title...."
+            android:id="@+id/etTitle"
+            android:textColor="#FFFFFF"
+            ></EditText>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your story here...."
+        android:inputType="text|textMultiLine"
+        android:scrollbars="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#93A6E4"
+        android:id="@+id/etIsiDiary"
+        ></EditText>
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detailStory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/back_icon"
+                android:id="@+id/btnBack"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80dp"
+                android:textSize="22sp"
+                android:id="@+id/tvDateDetail"
+                android:textColor="#93A6E4"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Date: 28/09/20"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/diarypic"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/imgViewDetail"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTitle"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#93A6E4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/etTitleDetail"
+                android:text="Title"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp"
+                ></TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIsi"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#93A6E4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/etIsiDetail"
+                android:text="My Story"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp"
+                ></TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
